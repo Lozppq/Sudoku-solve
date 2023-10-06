@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数独</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div id="his">
+    <form id="box" action="" method="get">
+        <p id="timer">00:00:00</p>
+        <button id="finish" onclick="stopTimer()" type="submit">结束计时</button>
+        <input id="show" type="text" placeholder="历史记录" name="input" autocomplete="on">
+    </form>
+</div>
+<div id="head">
+    <table id="inside"></table>
+</div>
+<div id="out" align="center">
+    <button type="button" onclick="solve()" id="b1">解出按钮</button>
+    <select id="selection">
+        <option value="option1">简单</option>
+        <option value="option2">中等</option>
+        <option value="option3">困难</option>
+    </select>
+    <button type="button" onclick="startConcurrentSudoku()" id="b2">生成按钮</button>
+    <button type="button" onclick="aboveone()" id="b3">上一页</button>
+    <button type="button" onclick="nextone()" id="b4">下一页</button>
+</div>
+<script src="index.js"></script>
+
+</body>
+</html>
+
+
